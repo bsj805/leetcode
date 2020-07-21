@@ -1,0 +1,20 @@
+class Solution {
+public:
+    int arrangeCoins(int n) {
+        long long sum;
+        double calc;
+        double re;
+        sum=0;
+        calc=n;        
+        calc*=2;
+        calc+=0.25;
+        int result=0;
+        re=sqrt(calc);
+        result=floor(re-0.5);
+        
+        return result;
+    }
+};
+
+//#사실 등차수열의 합 공식을 생각해보면 된다.
+//# x 값이 주어졌을때 우리는 Y값을 구할 수 있게 된다. 완전제곱식? 이라고 하나 그걸 만들어서 양쪽에 루트를 씌워주고 하면된다.
